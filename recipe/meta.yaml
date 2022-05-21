@@ -1,5 +1,5 @@
 {% set name = "less-learn" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - numpy >=1.21.4
+    - numpy >=1.21.5
     - python >=3.6
     - scikit-learn >=1.0.1
 
