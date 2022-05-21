@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/less-learn-{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: ce100c4df334a2da687ecd22086c237c353ac2d5d75139f59cfb4704083bd546
 
 build:
   number: 0
