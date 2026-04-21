@@ -1,5 +1,5 @@
 {% set name = "less-learn" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/less-learn-{{ version }}.tar.gz
-  sha256: 05dc393981d09113e9e2f089ed391d317d0b02279078b4283e22536bf0810f00
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 50b7055cf852f03b8532496c1ea946d7f72ca3585ab450c345372990968c4dd3
 
 build:
   number: 0
