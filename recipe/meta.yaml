@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/less-learn-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/less-learn-{{ version }}.tar.gz
   sha256: 05dc393981d09113e9e2f089ed391d317d0b02279078b4283e22536bf0810f00
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - numpy >=1.21.5
-    - python >=3.6
+    - python >={{ python_min }}
     - scikit-learn >=1.0.1
 
 test:
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/sibirbil/LESS
